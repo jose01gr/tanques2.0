@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tanques de agua</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>LLENADO DE TANQUES</h1>
+  </header>
+  <main>
+    <div class="containerTanque">
+      <div class="llaveprin">
+        <img class="llave" id="llave1llenado" src="image0.png" alt="Llave 1">
+        <img class="llave" id="llave1vaciado" src="image1.png" alt="Llave 2">
+      </div>
+      <div class="tanque1">
+        <div id="agua1" class="agua" style="height: 100%;"></div>
+        <div id="tanque1">100% (5000 litros)</div>
+        <img class="llave2" id="llave2llenado" src="image0.png" alt="Llave 1">
+        <img class="llave2" id= "llave2vaciado" src="image1.png" alt="Llave 2">
+      </div>
+      <div class="tanque2">
+        <div id="agua2" class="agua" style="height: 0%;"></div>
+        <div id="tanque2">0% (0 litros)</div>
+        <img class="llave3" id="llave3llenado" src="image0.png" alt="Llave 1">
+        <img class="llave3" id="llave3vaciado" src="image1.png" alt="Llave 2">
+      </div>
+    </div>
+    <div  class="controles">
+      <label for="llave1">L/s para la llave 1:</label>
+      <input type="number" id="llave1" value="400" min="1" max="400">
+      <div id="temporizador"><span id="tiempo">00:00:00</span></div>
+      <button id="iniciar"><img src="play.png" alt=""></button>
+      <button id="detener"><img src="restart.png" id="restart" alt=""></button>
+      <label for="llave2">L/s para la llave 2:</label>
+      <input type="number" id="llave2" value="500" min="1" max="500">
+      <label for="llave3">L/s para la llave 3:</label>
+      <input type="number" id="llave3" value="600" min="1" max="600">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
